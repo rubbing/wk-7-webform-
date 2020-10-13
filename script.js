@@ -1,8 +1,23 @@
 // P5 JAVASCRIPT FUNCTIONS
 ///////////////////////////////////////////////////////////////////
 
+let backgroundRed = 255;
 // Insert your setup and draw functions here
+function setup(){
+  // Creates a canvas with the same dimensions as the browser window
+  var canvas = createCanvas(window.innerWidth, window.innerHeight);
+  // Attaches the canvas to the body element with the ID 'canvas-container'
+  canvas.parent('canvas-container');
+}
 
+function draw(){
+  // Sets the canvas background every frame
+  background(backgroundRed, 255, 230);
+}
+
+function mousePressed(){
+backgroundRed = random(0, 255);
+}
 
 // REGULAR JAVASCRIPT FUNCTIONS
 ///////////////////////////////////////////////////////////////////
